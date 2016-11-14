@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">    
     <title>каталог гостинниц Sedona</title>
   </head>
   <body class="page">
@@ -23,34 +24,58 @@
     </header>
     <main class="contant">
     	<div class="container">
-    		<form class="form form-filter" action="https://echo.htmlacademy.ru" method="post">
-	    		<div class="form__block infrastructures">
-	    			<b>Инфраструктура:</b>
-						<label>
-							<input class="form__checkbox" type="checkbox" name="pool" checked> бассейн
-						</label>
-						<label>
-							<input class="form__checkbox" type="checkbox" name="parking"> парковка
-						</label>
-						<label>
-							<input class="form__checkbox" type="checkbox" name="wi-fi"> wi-fi
-						</label>
+    		<form class="form-filter clearfix" action="https://echo.htmlacademy.ru" method="post">
+	    		<div class="form-filter__block infrastructures">
+	    			<div class="form-filter__label">Инфраструктура:</div>
+	    			<div class="form-filter__checkbox">
+	    				<label>
+								<input type="checkbox" name="pool" checked> 
+								<span class="checkbox-indicator"></span>
+								бассейн
+							</label>
+	    			</div>
+	    			<div class="form-filter__checkbox">
+							<label>
+								<input type="checkbox" name="parking"> 
+								<span class="checkbox-indicator"></span>
+								парковка
+							</label>
+						</div>
+						<div class="form-filter__checkbox">
+							<label>
+								<input type="checkbox" name="wi-fi"> 
+								<span class="checkbox-indicator"></span>
+								wi-fi
+							</label>
+						</div>
 					</div>
-	    		<div class="form__block type-housing">
-		    		<b>Тип жилья:</b>
-						<label>
-							<input class="form__checkbox" type="checkbox" name="hotel" checked> гостиница
-						</label>
-						<label>
-							<input class="form__checkbox" type="checkbox" name="motel" checked> мотель
-						</label>
-						<label>
-							<input class="form__checkbox" type="checkbox" name="apartments" checked> апартаменты
-						</label>
+	    		<div class="form-filter__block type-housing">
+		    		<div class="form-filter__label">Тип жилья:</div>
+		    		<div class="form-filter__checkbox">
+							<label>
+								<input type="checkbox" name="hotel" checked>
+								<span class="checkbox-indicator"></span> 
+								гостиница
+							</label>
+						</div>
+						<div class="form-filter__checkbox">
+							<label>
+								<input type="checkbox" name="motel" checked>
+								<span class="checkbox-indicator"></span>
+								 мотель
+							</label>
+						</div>
+						<div class="form-filter__checkbox">
+							<label>
+								<input type="checkbox" name="apartments" checked> 
+								<span class="checkbox-indicator"></span>
+								апартаменты
+							</label>
+						</div>
 					</div>
-					<div class="form_block type-cost">
-						<b>стоимость в сутки (р):</b>
-						<table class="form__table">
+					<div class="form-filter__block type-cost">
+						<div class="form-filter__table-caption">стоимость в сутки (р):</div>
+						<table class="form-filter__table">
 							<tr>
 								<td>от 0</td>
 								<td>до 3000</td>
@@ -59,43 +84,47 @@
 						<div class="linner linner-left">
 						</div>		
 						<div class="linner linner-right">
-						</div>				
-					</div>
-					<button class="btn" type="submit">Показать</button>	
+						</div>	
+						<button class="btn btn-filter" type="submit">Показать</button>			
+					</div>						
     		</form>
 	    	<div class="catalog">
-	    		<div class="catalog__finded">
-	    			<span>Найдено: </span><span class="catalog__finded-count">3</span>
-	    		</div>
-	    		<div class="catalog__sort">
-	    			<b>сортировка:</b>
-	    			<ul class="list">
-	    				<li><a class="link link-form link-form_selected" href="#">по цене</a></li>
-	    				<li><a class="link link-form" href="#">по типу</a></li>
-	    				<li><a class="link link-form" href="#">по рейтингу</a></li>
-	    			</ul>	    			
-	    		</div>
-	    		<div class="sort-btns">
-	    			<span class="btn btn-sort btn-asc"></span>
-	    			<span class="btn btn-sort btn-desc"></span>
+	    		<div class="catalog__params clearfix">
+	    			<div class="catalog__finded">
+	    				<div class="catalog__finded-label"> 
+	    					<span>Найдено: </span><span class="catalog__finded-count">3</span>
+	    				</div>
+	    				
+	    				<b>сортировка:</b>
+		    			<ul class="list">
+		    				<li class="list__item"><a class="link link-form link-form_selected" href="#">по цене</a></li>
+		    				<li class="list__item"><a class="link link-form" href="#">по типу</a></li>
+		    				<li class="list__item"><a class="link link-form" href="#">по рейтингу</a></li>
+		    			</ul>
+	    			</div>	
+	    			<div class="sort-btns">
+		    			<span class="btn btn-sort btn-asc"></span>
+		    			<span class="btn btn-sort btn-desc"></span>
+	    			</div>
 	    		</div>
 	    		<section class="products">
-	    			<article class="product">
+	    			<article class="product clearfix">
 	    				<figure class="product__photo">
 	    					<img src="img/hostels/hostel1.jpg" width="135" height="90" alt="photo">
-	    				</figure>
-	    				<div class="product__name">
+	    				</figure>	    				
+	    				<div class="product__info">
+	    					<div class="product__name">
 	    					amara-resort &amp; spa
-	    				</div>
-	    				<span class="product__type-housing">гостиница</span>
-	    				<span class="product__cost">от 3500 р.</span>
-	    				<div class="product__btns">
-	    					<a class="btn btn-product btn-product-more" href="#">подробнее</a>
-	    					<a class="btn btn-product btn-product-book" href="#">забронировать</a>
+	    					</div>
+	    					<span class="product__type-housing">гостиница</span>
+		    				<span class="product__cost">от 3500 р.</span>
+		    				<div class="product__btns">
+		    					<a class="btn btn-product btn-product-more" href="#">подробнее</a>
+		    					<a class="btn btn-product btn-product-book" href="#">забронировать</a>
+		    				</div>
 	    				</div>
 	    				<div class="product__rating">
-	    					<div class="product__stars">
-	    						<span class="product__star"></span>
+	    					<div class="product__stars">	    						
 	    						<span class="product__star"></span>
 	    						<span class="product__star"></span>
 	    						<span class="product__star"></span>
@@ -106,18 +135,20 @@
 	    					</div>
 	    				</div>
 	    			</article>
-	    			<article class="product">
+	    			<article class="product clearfix">
 	    				<figure class="product__photo">
 	    					<img src="img/hostels/hostel2.jpg" width="135" height="90" alt="photo">
 	    				</figure>
-	    				<div class="product__name">
-	    					desert quail inn
-	    				</div>
-	    				<span class="product__type-housing">мотель</span>
-	    				<span class="product__cost">от 2000 р.</span>
-	    				<div class="product__btns">
-	    					<a class="btn btn-product btn-product-more" href="#">подробнее</a>
-	    					<a class="btn btn-product btn-product-book" href="#">забронировать</a>
+	    				<div class="product__info">
+		    				<div class="product__name">
+		    					desert quail inn
+		    				</div>
+		    				<span class="product__type-housing">мотель</span>
+		    				<span class="product__cost">от 2000 р.</span>
+		    				<div class="product__btns">
+		    					<a class="btn btn-product btn-product-more" href="#">подробнее</a>
+		    					<a class="btn btn-product btn-product-book" href="#">забронировать</a>
+		    				</div>
 	    				</div>
 	    				<div class="product__rating">
 	    					<div class="product__stars">
@@ -129,19 +160,21 @@
 	    					</div>
 	    				</div>
 	    			</article>
-	    			<article class="product">
+	    			<article class="product clearfix">
 	    				<figure class="product__photo">
 	    					<img src="img/hostels/hostel3.jpg" width="135" height="90" alt="photo">
 	    				</figure>
-	    				<div class="product__name">
-	    					villas at poco diablo
-	    				</div>
-	    				<span class="product__type-housing">аппартаменты</span>
-	    				<span class="product__cost">от 4000 р.</span>
-	    				<div class="product__btns">
-	    					<a class="btn btn-product btn-product-more" href="#">подробнее</a>
-	    					<a class="btn btn-product btn-product-book" href="#">забронировать</a>
-	    				</div>
+	    				<div class="product__info">
+		    				<div class="product__name">
+		    					villas at poco diablo
+		    				</div>
+		    				<span class="product__type-housing">аппартаменты</span>
+		    				<span class="product__cost">от 4000 р.</span>
+		    				<div class="product__btns">
+		    					<a class="btn btn-product btn-product-more" href="#">подробнее</a>
+		    					<a class="btn btn-product btn-product-book" href="#">забронировать</a>
+		    				</div>
+		    			</div>
 	    				<div class="product__rating">
 	    					<div class="product__stars">
 	    						<span class="product__star"></span>
@@ -158,18 +191,20 @@
     	</div>    	
     </main>
     <footer class="footer">
-      <section class="footer__visited">
-        <a class="link link_visited" href="https://htmlacademy.ru">#Visited</a>
-      </section>
-      <section class="footer__social">          
-        <a class="btn btn-social btn-social-tw" href="#">Твиттер</a>
-        <a class="btn btn-social btn-social-fb" href="#">Фейсбук</a>
-        <a class="btn btn-social btn-social-yo" href="#">Ютуб</a>
-      </section>
-      <section class="footer__copyright">
-        <p>website by:</p>
-        <a class="btn btn-copyright" href="https://htmlacademy.ru">HTML Academy</a>
-      </section>
+      <div class="container clearfix"> 
+        <section class="footer__visited">
+          <a class="link link_visited" href="https://htmlacademy.ru">#Visitsedona</a>
+        </section>
+        <section class="footer__social">          
+          <a class="btn btn-social btn-social-tw" href="#">Твиттер</a>
+          <a class="btn btn-social btn-social-fb" href="#">Фейсбук</a>
+          <a class="btn btn-social btn-social-yo" href="#">Ютуб</a>
+        </section>
+        <section class="footer__copyright">
+          <label class="footer__label">website by:</label>
+          <a class="btn btn-copyright" href="https://htmlacademy.ru">HTML</a>
+        </section>
+      </div>
     </footer>
 	</body>
 </html>
