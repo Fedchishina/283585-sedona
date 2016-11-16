@@ -9,17 +9,18 @@
     <body class="page">
       <header class="header">
         <div class="container">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="img/logo.png" width="138" height="70" alt="sedona-logo">
+          </a>
           <nav class="header__nav">
             <ul class="nav">
-              <li class="nav__item"><a class="link nav__link" href="#">информация</a></li>
-              <li class="nav__item"><a class="link nav__link" href="#">фото и видео</a></li>
+              <li class="nav__item"><a class="link nav__link" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0" target="_blank">информация</a></li>
+              <li class="nav__item"><a class="link nav__link" href="http://ru.123rf.com/%D0%A4%D0%BE%D1%82%D0%BE-%D1%81%D0%BE-%D1%81%D1%82%D0%BE%D0%BA%D0%B0/sedona.html" target="_blank">фото и видео</a></li>
               <li class="nav__item"><a class="link nav__link" href="#">карта штата</a></li>
-              <li class="nav__item"><a class="link nav__link" href="#">гостинницы</a></li>
+              <li class="nav__item"><a class="link nav__link" href="catalog.html">гостиницы</a></li>             
             </ul>
           </nav>
-          <div class="logo">
-            <img class="logo__img" src="img/logo.png" width="138" height="70" alt="sedona-logo">
-          </div>
+
         </div>
       </header>
       <main class="content">
@@ -115,19 +116,19 @@
                 </div>                
                 <div class ="form__spinblocks">
                   <span class="form__spinblock">
-                    <label>взрослые:</label>
-                    <div class="spinblock_btns">
-                      <button class="btn btn-spinblock" type="button">-</button>
+                    <label class="label-adult">взрослые:</label>
+                    <div class="spinblock_btns spinblock_btns-adult">
+                      <button class="btn btn-spinblock btn-spinblock-minus" type="button">-</button>
                       <input class="form__text" type="text" name="count-adult" value="2" required>
-                      <button class="btn btn-spinblock" type="button">+</button>
+                      <button class="btn btn-spinblock btn-spinblock-plus" type="button">+</button>
                     </div>
                   </span>
                   <span class="form__spinblock">
-                    <label>дети:</label> 
-                    <span class="spinblock_btns">
-                      <button class="btn btn-spinblock" type="button">-</button>
+                    <label class="label-child">дети:</label> 
+                    <span class="spinblock_btns spinblock_btns-child">
+                      <button class="btn btn-spinblock btn-spinblock-minus" type="button">-</button>
                       <input class="form__text" type="text" name="count-child" value="0" required>
-                      <button class="btn btn-spinblock" type="button">+</button>
+                      <button class="btn btn-spinblock btn-spinblock-plus" type="button">+</button>
                     </span>
                   </span>  
                 </div>                
@@ -146,13 +147,13 @@
             <a class="link link_visited" href="https://htmlacademy.ru">#Visitsedona</a>
           </section>
           <section class="footer__social">          
-            <a class="btn btn-social btn-social-tw" href="#">Твиттер</a>
-            <a class="btn btn-social btn-social-fb" href="#">Фейсбук</a>
-            <a class="btn btn-social btn-social-yo" href="#">Ютуб</a>
+            <a class="btn btn-social btn-social-tw" href="https://twitter.com/sedonaaz" target="_blank">Твиттер</a>
+            <a class="btn btn-social btn-social-fb" href="https://www.facebook.com/VisitSedona/" target="_blank">Фейсбук</a>
+            <a class="btn btn-social btn-social-yo" href="https://www.youtube.com/watch?v=tzS7CaGzlko" target="_blank">Ютуб</a>
           </section>
           <section class="footer__copyright">
             <label class="footer__label">website by:</label>
-            <a class="btn btn-copyright" href="https://htmlacademy.ru">HTML</a>
+            <a class="btn btn-copyright" href="https://htmlacademy.ru" target="_blank">HTML</a>
           </section>
         </div>
       </footer>

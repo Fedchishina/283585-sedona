@@ -11,6 +11,14 @@
   var storageCountAdult = localStorage.getItem("countAdult");
   var storageCountChild = localStorage.getItem("countChild");
 
+  var spinblockBtnsAdult = form.querySelector(".spinblock_btns-adult");
+  var btnMinusAdult = spinblockBtnsAdult.querySelector(".btn-spinblock-minus");
+  var btnPlusAdult = spinblockBtnsAdult.querySelector(".btn-spinblock-plus");
+
+  var spinblockBtnsChild = form.querySelector(".spinblock_btns-child");
+  var btnMinusChild = spinblockBtnsChild.querySelector(".btn-spinblock-minus");
+  var btnPlusChild = spinblockBtnsChild.querySelector(".btn-spinblock-plus");
+
   link.addEventListener("click", function(event) {
     event.preventDefault();
     form.classList.remove("form-error");
@@ -57,3 +65,40 @@
       }
     }
   });
+
+  btnMinusAdult.addEventListener("click", function(event) {
+    event.preventDefault();
+    if ((countAdult)&&(countAdult.value>0)) {
+      countAdult.value = countAdult.value - 1;
+    } else {
+      countAdult.value = 0;
+    }    
+  });
+
+  btnMinusChild.addEventListener("click", function(event) {
+    event.preventDefault();
+    if ((countChild)&&(countChild.value>0)) {
+      countChild.value = countChild.value - 1;
+    } else {
+      countChild.value = 0;
+    }    
+  });
+
+  btnPlusAdult.addEventListener("click", function(event) {
+    event.preventDefault();
+    if (countAdult) {
+      countAdult.value = parseInt(countAdult.value) + 1;
+    } else {
+      countAdult.value = 0;
+    }    
+  });
+
+  btnPlusChild.addEventListener("click", function(event) {
+    event.preventDefault();
+    if (countChild) {
+      countChild.value = parseInt(countChild.value) + 1;
+    } else {
+      countChild.value = 0;
+    }    
+  });
+
