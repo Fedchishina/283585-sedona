@@ -64,7 +64,7 @@
 body {
   min-width: 1200px;
 
-  font-family: "MyriadProRegular", sans-serif;
+  font-family: "MyriadProRegular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
@@ -90,7 +90,7 @@ body {
 }
 
 .main-page {
-  background: #ffffff url("../img/background.jpg") no-repeat center top;
+  
 }
 
 .header {
@@ -169,7 +169,28 @@ figure {
 }
 
 .nav__link {
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
+  color: #000000;
+}
+
+.nav__link:hover {
+  color: #81b3d2;
+}
+
+.nav__link:active {
+  color: #b2b2b2;
+}
+
+.nav__link-active {
+  color: #bfb6b1;
+}
+
+.nav__link-active:hover {
+  color: #604e43;
+}
+
+.nav__link-active:active {
+  color: #e1ddda;
 }
 
 .logo {
@@ -181,17 +202,23 @@ figure {
 
 .content__header {
   text-align: center;
+  background: #81b3d2 url("../img/background.jpg") no-repeat center top;
 }
 
 .content__img-title {
   margin-top: 75px;
-  margin-bottom: 130px;
+  margin-bottom: 75px;
 }
 
 .content__title {  
   width: 450px;
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
   margin-bottom: 30px;
+}
+
+.content__text {
+  padding-top: 55px;
+  background-color: #ffffff;
 }
 
 .content__header p {
@@ -246,11 +273,12 @@ figure {
   font-size: 0;
   text-align: center;
   margin-top: 55px;
-  margin-bottom: 75px;
+  margin-bottom: 85px;
 }
 
 .feature__item {
   display: inline-block;
+  vertical-align: top;
   width: 290px;
   padding: 0 55px;
   font-size: 14px;
@@ -275,11 +303,11 @@ figure {
 .feature__name {
   margin-bottom: 20px;
   font-size: 21px;  
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
 }
 
 .privileges {
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 40px;
   margin-bottom: 55px;
   font-size: 0;
@@ -289,6 +317,7 @@ figure {
 
 .privilege__item {
   display: inline-block;
+  vertical-align: top;
   width: 270px;
   padding: 0 65px;
   font-size: 14px;
@@ -300,7 +329,7 @@ figure {
   margin-bottom: 25px;
   width: 120px;
   font-size: 21px;  
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
 }
 
 .privilege__item p {
@@ -321,7 +350,7 @@ figure {
 .feedback__title {
   margin-bottom: 35px;
   font-size: 30px;
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
   text-align: center;
 }
 
@@ -330,68 +359,112 @@ figure {
   top: 235px;
   left: 50%;
   display: none;
-  padding: 50px 55px;
+  padding: 55px;
   margin-left: -285px;
   width: 460px;
-  min-height: 295px;
+  min-height: 285px;
   background-color: #ffffff;
 }
 
 /* Всплывающая форма */
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 .form-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .form-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .form__find {
   display: block;
   margin: 0 auto;
-  padding: 30px 135px;   
-  width: 300px;
+  padding: 30px 120px;
+  width: 330px;
   font-size: 21px;
   line-height: 26px;
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
   color: #ffffff;
   background-color: #766357;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 }
 
 .form__attributes {
-  font-family: "MyriadProBold", sans-serif;
-  margin-bottom: 45px;
+  font-family: "MyriadProBold", "Arial", sans-serif;
+  margin-bottom: 50px;
 }
 
 .form__attributes label {
@@ -412,17 +485,16 @@ figure {
 }
 
 .form__date {
-  margin-left: 19px;
+  float: right;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 340px;
   text-decoration: none;
   background-color: #f2f2f2;
-  color: 000000;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   font-size: 14px;
   line-height: 26px;
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
 }
 
 .form__date:hover {
@@ -430,13 +502,18 @@ figure {
 }
 
 .form__date:active {
-  background-color: transparent;
-  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  outline: 2px solid #e5e5e5; 
+}
+
+.form__date:focus {
+  outline: 2px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .block-date {
   position: relative;
-  margin-bottom: 30px;  
+  margin-bottom: 40px;  
 }
 
 .calendar-icon {
@@ -449,6 +526,14 @@ figure {
   height: 21px;
 }
 
+.calendar-icon:hover {
+  background: #f2f2f2 url("../img/calendar-hover.png") no-repeat center;
+}
+
+.calendar-icon:active {
+  background: #f2f2f2 url("../img/calendar-down.png") no-repeat center;
+}
+
 .form__text {
   padding: 0;
   vertical-align: top;
@@ -456,7 +541,7 @@ figure {
   height: 40px;
   font-size: 14px;
   line-height: 26px;
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
   text-align: center;
   background-color: #f2f2f2;
   border: 0;
@@ -464,8 +549,8 @@ figure {
 
 .spinblock_btns {  
   display: inline-block;
-  text-align: center;
   vertical-align: top;
+  text-align: center;  
   font-size: 0;
   text-decoration: none;
 }
@@ -478,9 +563,12 @@ figure {
   margin-left: 25px;
 }
 
-.form__spinblock {
-  margin-right: 38px;
-  display: inline-block;
+.form__spinblock-left {
+  float: left;
+}
+
+.form__spinblock-right {
+  float: right;
 }
 
 .form__spinblock:last-child {
@@ -495,65 +583,16 @@ figure {
   width: 65px;
 }
 
-.map__photo img {
-  display: block;
-}
-
-.footer {
-    position: relative;
-    left: 50%;
-    margin-left: -600px;
-    width: 1200px;
-    font-family: "MyriadProBold", sans-serif;
-    color: #333333;
-    background-color: #ffffff;
-}
-
-.footer-main {
-    margin-top: -130px;
-}
-
-.footer .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: none;
-  background-color: rgba(255, 255, 255, 0.90);
-  box-shadow: 0 0 0 0;
-}
-
-.footer__visited {
-  float: left;  
-  margin-left: 85px;
-  margin-right: 195px;
-  margin-top: 5px;
-  width: 240px;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.footer__social {
-  float: left;
-  text-align: center;
-}
-
-.footer__copyright {
-  float: right;  
-  margin-right: 50px;
-  width: 240px;
-}
-
-.footer__label {
-  font-size: 14px;
-  line-height: 26px;
-  font-family: "MyriadProRegular", sans-serif;
-  vertical-align: middle;
+.map {
+  background: #ebebeb url("../img/map.jpg");
+  width: 1200px;
+  height: 593px;
 }
 
 .btn {  
   font-size: 21px;
   line-height: 26px;
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   border: 0;
@@ -570,6 +609,11 @@ figure {
 
 .btn-spinblock:hover {
   color: #000000;
+}
+
+.btn-spinblock:focus {
+  border: 0;
+  outline: none;
 }
 
 .btn-spinblock:active {
@@ -590,12 +634,16 @@ figure {
   background-color: #5496bd;
 }
 
+.btn-find:active > span {
+  opacity: 0.5;
+}
+
 .btn-filter {
   padding: 10px 30px;
   color: #ffffff;   
   font-size: 16px;
   line-height: 21px;
-  font-family: "MyriadProRegular", sans-serif;
+  font-family: "MyriadProRegular", "Arial", sans-serif;
   text-transform: uppercase;
   background-color:transparent;
   border: 2px solid #ffffff;
@@ -603,6 +651,7 @@ figure {
 
 .btn-social {
   display: inline-block;
+
   width: 46px;
   height: 46px;
   margin: 0 3px;
@@ -629,12 +678,24 @@ figure {
   background-image: url("../img/icon-t.png");
 }
 
+.btn-social-tw:active {
+  background-image: url("../img/icon-t-down.png");
+}
+
 .btn-social-fb {
   background-image: url("../img/icon-f.png");
 }
 
+.btn-social-fb:active {
+  background-image: url("../img/icon-f-down.png");
+}
+
 .btn-social-yo {
   background-image: url("../img/icon-y.png");
+}
+
+.btn-social-yo:active {
+  background-image: url("../img/icon-y-down.png");
 }
 
 .btn-copyright {
@@ -662,15 +723,39 @@ figure {
   color: #ffffff;  
   font-size: 14px;
   line-height: 21px;
-  font-family: "MyriadProBold", sans-serif;  
+  font-family: "MyriadProBold", "Arial", sans-serif;  
 }
 
 .btn-product-more {
    background-color: #81b3d2;
 }
 
+.btn-product-more:hover {
+   background-color: #669ec0;
+}
+
+.btn-product-more:active {
+   background-color: #548dbd;
+}
+
+.btn-product-more:active > span {
+   opacity: 0.5;
+}
+
 .btn-product-book {
    background-color: #766357;
+}
+
+.btn-product-book:hover {
+   background-color: #604e43;
+}
+
+.btn-product-book:active {
+   background-color: #604e43;
+}
+
+.btn-product-book:active > span {
+   opacity: 0.5;
 }
 
 /* ------------------------- страница "Каталог" ---------------------------------------------- */
@@ -749,7 +834,8 @@ figure {
   height: 22px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -888,7 +974,7 @@ figure {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 21px;
-  font-family: "MyriadProRegular", sans-serif;
+  font-family: "MyriadProRegular", "Arial", sans-serif;
 }
 
 .form-filter__table-caption {
@@ -909,16 +995,18 @@ figure {
   text-align: center;
   font-size: 14px;
   line-height: 21px;
-  font-family: "MyriadProRegular", sans-serif;
+  font-family: "MyriadProRegular", "Arial", sans-serif;
 }
 
 .linner {
   height: 25px;
   display: inline-block;
+  vertical-align: top; 
 }
 
 .list {
   display: inline-block;
+  vertical-align: top; 
   margin: 0;
   margin-left: 25px;
   padding: 0;
@@ -935,10 +1023,23 @@ figure {
 }
 
 .link-form {
+  color: #d1d1d1;
   text-decoration: none; /* Убираем подчеркивание */
   border-bottom: 1px dashed #81b3d2; 
 }
 
+.link-form:hover {
+  color: #92bdd8; 
+}
+
+.link-form:active {
+  color: #000000; 
+}
+
+.link-form_selected {
+  color: #b3d1e4;
+  border: 0;
+}
 
 .sort-btns {
   position: relative;
@@ -956,6 +1057,20 @@ figure {
   border-bottom: 10px solid #cccccc;
 }
 
+.btn-asc:hover {
+  border-bottom-color: #000000;
+}
+
+.btn-asc:active {
+  border-bottom-color: #81b3d2;
+}
+
+.btn-asc-selected,
+.btn-asc-selected:hover, 
+.btn-asc-selected:active {
+  border-bottom-color: #81b3d2;
+}
+
 .btn-desc {
   position: absolute;
   left: -85px;
@@ -963,7 +1078,21 @@ figure {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #81b3d2;
+  border-top: 10px solid #cccccc;
+}
+
+.btn-desc:hover {
+  border-top-color: #000000;
+}
+
+.btn-desc:active {
+  border-top-color: #81b3d2;
+}
+
+.btn-desc-selected,
+.btn-desc-selected:hover, 
+.btn-dsc-selected:active {
+  border-top-color: #81b3d2;
 }
 
 .catalog__finded {
@@ -975,29 +1104,31 @@ figure {
 
 .catalog__finded-label {
   display: inline-block;
+  vertical-align: top;
   width: 160px;
   font-size: 21px;
   line-height: 26px;
-  font-family: "MyriadProBold", sans-serif; 
+  font-family: "MyriadProBold", "Arial", sans-serif; 
 }
 
 .catalog__finded-count {
   font-size: 21px;
   line-height: 26px;
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif;
 }
 
 .product {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 20px;
   padding-left: 75px;
-  padding-right: 75px;
+  padding-right: 65px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .product__photo {
   float: left;
+  padding-top: 3px;
   width: 165px;
 }
 
@@ -1010,7 +1141,7 @@ figure {
 }
 
 .product__stars {
-  
+  text-align: right;
 }
 
 .product__star {
@@ -1020,28 +1151,91 @@ figure {
 }
 
 .product__name {
-  margin-top: -10px;
-  margin-bottom: 10px;
+  display: block;  
+  margin-bottom: 5px;
   font-size: 21px;
   line-height: 26px;
-  font-family: "MyriadProBold", sans-serif;
+  font-family: "MyriadProBold", "Arial", sans-serif; 
+  color: #000000;
+  text-decoration: none; 
+}
+
+.product__name:hover {
+  color: #a3c7de;
+}
+
+.product__name:active {
+  color: #b2b2b2;
 }
 
 .product__type-housing {
   display: inline-block;
+  vertical-align: top;
   width: 115px;
 }
 
 .product__btns {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .product__balls {
   margin-top: 40px;
+  margin-right: 10px;
   padding: 5px 15px;
   background-color: #f2f2f2;
   color: #666666;
   font-size: 14px;
   line-height: 21px;
-  font-family: "MyriadProRegular", sans-serif;
+  font-family: "MyriadProRegular", "Arial", sans-serif;
+}
+
+.footer {
+    position: relative;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+    font-family: "MyriadProBold", "Arial", sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.footer-main {
+    margin-top: -130px;
+}
+
+.footer .container {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.90);
+  box-shadow: 0px 5px 20px 0 gray;
+}
+
+.footer__visited {
+  float: left;  
+  margin-left: 85px;
+  margin-right: 195px;
+  margin-top: 5px;
+  width: 240px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer__social {
+  float: left;
+  text-align: center;
+}
+
+.footer__copyright {
+  float: right;  
+  margin-right: 50px;
+  width: 240px;
+}
+
+.footer__label {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "MyriadProRegular", "Arial", sans-serif;
+  vertical-align: middle;
 }

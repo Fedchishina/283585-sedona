@@ -19,6 +19,7 @@
   var btnMinusChild = spinblockBtnsChild.querySelector(".btn-spinblock-minus");
   var btnPlusChild = spinblockBtnsChild.querySelector(".btn-spinblock-plus");
 
+  
   link.addEventListener("click", function(event) {
     event.preventDefault();
     form.classList.remove("form-error");
