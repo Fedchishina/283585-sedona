@@ -1,77 +1,14 @@
-/*---------------------------- подключение шрифта MyriadProRegular ------------------------------- */
-/* font-family: "MyriadProRegular"; */
-@font-face {
-    font-family: "MyriadProRegular";
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "MyriadProBold"; */
-@font-face {
-    font-family: "MyriadProBold";
-    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
-    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "MyriadProItalic"; */
-@font-face {
-    font-family: "MyriadProItalic";
-    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
-    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
-    url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "MyriadProSemiBold"; */
-@font-face {
-    font-family: "MyriadProSemiBold";
-    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
-    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
-    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "MyriadProBoldItalic"; */
-@font-face {
-    font-family: "MyriadProBoldItalic";
-    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
-    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
-    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "MyriadProSemiBoldItalic"; */
-@font-face {
-    font-family: "MyriadProSemiBoldItalic";
-    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
-    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
-    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
 body {
   min-width: 1200px;
 
-  font-family: "MyriadProRegular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: #333333;  
+  color: #333333;
   text-transform: uppercase;
 
-  background: #f2f2f2 ;
+  background: #f2f2f2;
 }
 
 .clearfix::after {
@@ -84,20 +21,17 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0;    
+  padding: 0;
   background-color: #ffffff;
-  box-shadow: 0 0 20px 0 gray;
-}
-
-.main-page {
-  
+  -webkit-box-shadow: 0 0 20px 0 gray;
+     -moz-box-shadow: 0 0 20px 0 gray;
+          box-shadow: 0 0 20px 0 gray;
 }
 
 .header {
   color: #333333;
   background-color: #f2f2f2;
 }
-
 
 h1 {
   margin: 0 auto;
@@ -107,11 +41,10 @@ h1 {
   font-weight: bold;
 }
 
-
 h2 {
   margin: 0 auto;
   font-size: 21px;
-  line-height: 21px;  
+  line-height: 21px;
   color: #000000;
   font-weight: bold;
 }
@@ -121,9 +54,8 @@ figure {
   margin: 0;
 }
 
-
 .header__nav {
-  float: left;  
+  float: left;
   width: 100%;
   background-color: #ffffff;
 }
@@ -140,12 +72,12 @@ figure {
   vertical-align: top;
   width: 20%;
   padding-top: 15px;
-  padding-bottom: 15px; 
+  padding-bottom: 15px;
   font-size: 14px;
 }
 
-.nav__item:nth-child(1) {  
-  padding-right: 35px;
+.nav__item:nth-child(1) {
+  padding-right: 30px;
 }
 
 .nav__item:nth-child(2) {
@@ -153,15 +85,14 @@ figure {
 }
 
 .nav__item:nth-child(3) {
-  padding-left: 110px;
+  padding-left: 112px;
   text-align: right;
 }
 
 .nav__item:nth-child(4) {
   float: right;
-  text-align: right;  
+  text-align: right;
 }
-
 
 .link {
   color: #333333;
@@ -169,7 +100,8 @@ figure {
 }
 
 .nav__link {
-  font-family: "MyriadProBold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -210,14 +142,15 @@ figure {
   margin-bottom: 75px;
 }
 
-.content__title {  
+.content__title {
   width: 450px;
-  font-family: "MyriadProBold", "Arial", sans-serif;
-  margin-bottom: 30px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 27px;
 }
 
 .content__text {
-  padding-top: 55px;
+  padding-top: 58px;
   background-color: #ffffff;
 }
 
@@ -227,7 +160,7 @@ figure {
 }
 
 .promoblock {
-  font-size: 0;  
+  font-size: 0;
 }
 
 .promo {
@@ -243,8 +176,8 @@ figure {
 
 .promo__name {
   padding-top: 55px;
-  margin-bottom: 20px;
-  width: 147px;
+  margin-bottom: 25px;
+  width: 151px;
   line-height: 21px;
   color: #ffffff;
 }
@@ -252,7 +185,7 @@ figure {
 .promo__photo {
   float: left;
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }
 
 .block-modificator {
@@ -263,22 +196,25 @@ figure {
   display: block;
 }
 
-.promo p {  
+.promo p {
+  padding: 0;
   margin: 0 auto;
-  margin-bottom: 15px;
-  width: 300px;
+  margin-bottom: 20px;
+  width: 302px;
+  font-size: 14px;
+  line-height: 21px;
 } 
 
 .features {
   font-size: 0;
   text-align: center;
-  margin-top: 55px;
-  margin-bottom: 85px;
+  margin-top: 56px;
+  margin-bottom: 80px;
 }
 
 .feature__item {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
   width: 290px;
   padding: 0 55px;
   font-size: 14px;
@@ -286,8 +222,7 @@ figure {
 }
 
 .feature__item:last-child {
-  margin-right: 0;
-  
+  margin-right: 0;  
 }
 
 .feature__item p {
@@ -296,18 +231,20 @@ figure {
 
 .feature__icon {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
 .feature__name {
-  margin-bottom: 20px;
-  font-size: 21px;  
-  font-family: "MyriadProBold", "Arial", sans-serif;
+  margin-bottom: 25px;
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .privileges {
-  padding-top: 45px;
+  padding-top: 48px;
   padding-bottom: 40px;
   margin-bottom: 55px;
   font-size: 0;
@@ -328,8 +265,10 @@ figure {
   margin: 0 auto;
   margin-bottom: 25px;
   width: 120px;
-  font-size: 21px;  
-  font-family: "MyriadProBold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px; 
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .privilege__item p {
@@ -338,20 +277,22 @@ figure {
 
 .feedback {
   position: relative;
+  text-align: center;
 }
 
-.feedback p {  
+.feedback p {
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
   width: 440px;
-  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .feedback__title {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   font-size: 30px;
-  font-family: "MyriadProBold", "Arial", sans-serif;
-  text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .form {
@@ -387,22 +328,76 @@ figure {
   }
 }
 
-@keyframes bounce {
+@-moz-keyframes bounce {
   0%   {
     -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+            -moz-transform: translateY(-2000px);
+         transform: translateY(-2000px);
   }
   70%  {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+            -moz-transform: translateY(30px);
+         transform: translateY(30px);
   }
   90%  {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+         transform: translateY(-10px);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+            -moz-transform: translateY(0);
+         transform: translateY(0);
+  }
+}
+
+@-o-keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            -o-transform: translateY(-2000px);
+       transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            -o-transform: translateY(30px);
+       transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+       transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            -o-transform: translateY(0);
+       transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            -moz-transform: translateY(-2000px);
+              -o-transform: translateY(-2000px);
+         transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            -moz-transform: translateY(30px);
+              -o-transform: translateY(30px);
+         transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+              -o-transform: translateY(-10px);
+         transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+              -o-transform: translateY(0);
+         transform: translateY(0);
   }
 }
 
@@ -421,80 +416,121 @@ figure {
   }
 }
 
-@keyframes shake {
+@-moz-keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+            -moz-transform: translateX(0);
+         transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+            -moz-transform: translateX(-10px);
+         transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+            -moz-transform: translateX(10px);
+         transform: translateX(10px);
+  }
+}
+
+@-o-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            -o-transform: translateX(0);
+       transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            -o-transform: translateX(-10px);
+       transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            -o-transform: translateX(10px);
+       transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+              -o-transform: translateX(0);
+         transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            -moz-transform: translateX(-10px);
+              -o-transform: translateX(-10px);
+         transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            -moz-transform: translateX(10px);
+              -o-transform: translateX(10px);
+         transform: translateX(10px);
   }
 }
 
 .form-show {
   display: block;
   -webkit-animation: bounce 0.6s;
-          animation: bounce 0.6s;
+          -moz-animation: bounce 0.6s;
+            -o-animation: bounce 0.6s;
+       animation: bounce 0.6s;
 }
 
 .form-error {
   -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+          -moz-animation: shake 0.6s;
+            -o-animation: shake 0.6s;
+       animation: shake 0.6s;
 }
 
-.form__find {
-  display: block;
+.btn-find-hostel {
   margin: 0 auto;
-  padding: 30px 120px;
-  width: 330px;
-  font-size: 21px;
-  line-height: 26px;
-  font-family: "MyriadProBold", "Arial", sans-serif;
+  padding: 30px 140px;
   color: #ffffff;
-  background-color: #766357;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
+  background-color: #766357;    
 }
 
 .form__attributes {
-  font-family: "MyriadProBold", "Arial", sans-serif;
   margin-bottom: 50px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  text-align: left;  
 }
 
-.form__attributes label {
-    
-    vertical-align: middle;
-    width: 108px;
+.block-date label {
+  display: inline-block;
+  width: 110px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.form__attributes .label-child {
+  width: 65px;
 }
 
 .form__dates {
-  margin-bottom: 35px;
-  
-}
-
-.form input.form__dates {
   background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
-  background-position: 100% -504px;
+  background-position: 100% -504px; 
 }
 
 .form__date {
-  float: right;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 340px;
+  display: inline-block;
+  padding-left: 15px;
+  width: 330px;
+  height: 34px;
   text-decoration: none;
   background-color: #f2f2f2;
   border: 2px solid transparent;
   font-size: 14px;
   line-height: 26px;
-  font-family: "MyriadProBold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .form__date:hover {
@@ -503,7 +539,7 @@ figure {
 
 .form__date:active {
   background-color: #ffffff;
-  outline: 2px solid #e5e5e5; 
+  outline: 2px solid #e5e5e5;
 }
 
 .form__date:focus {
@@ -513,17 +549,18 @@ figure {
 
 .block-date {
   position: relative;
-  margin-bottom: 40px;  
+  margin-bottom: 29px;
+  font-size: 0;
 }
 
 .calendar-icon {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 2px;
+  right: 3px;
   padding: 5px;
-  background: #f2f2f2 url("../img/calendar.png") no-repeat center;
-  width: 21px;
-  height: 21px;
+  background: #f2f2f2 url(../img/calendar.png) no-repeat center;
+  width: 25px;
+  height: 24px;
 }
 
 .calendar-icon:hover {
@@ -537,32 +574,38 @@ figure {
 .form__text {
   padding: 0;
   vertical-align: top;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   font-size: 14px;
   line-height: 26px;
-  font-family: "MyriadProBold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   text-align: center;
   background-color: #f2f2f2;
   border: 0;
 }
 
-.spinblock_btns {  
+.form__spinblocks label{
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.spinblock_btns {
   display: inline-block;
   vertical-align: top;
-  text-align: center;  
+  text-align: center;
   font-size: 0;
   text-decoration: none;
 }
 
 .spinblock_btns-adult {
-  margin-left: 35px;
+  margin-left: 40px;
 }
 
 .spinblock_btns-child {
   margin-left: 25px;
 }
-
 .form__spinblock-left {
   float: left;
 }
@@ -575,49 +618,60 @@ figure {
   margin-right: 0;
 }
 
-.label-adult {
-  width: 110px;
-}
-
-.label-child {
-  width: 65px;
-}
-
 .map {
   background: #ebebeb url("../img/map.jpg");
   width: 1200px;
   height: 593px;
 }
 
-.btn {  
+.btn {
   font-size: 21px;
-  line-height: 26px;
-  font-family: "MyriadProBold", "Arial", sans-serif;
+  line-height: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   border: 0;
+  outline: 0;
   cursor: pointer;
-   
 }
 
 .btn-spinblock {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   color: #a9a9a9;
   background-color: #f2f2f2;
 }
 
+.btn-spinblock > span{
+  position: relative; top: 0; left: 0;
+}
+
 .btn-spinblock:hover {
   color: #000000;
+  line-height: normal;
+  border: 0;
+  outline: 0;
 }
 
 .btn-spinblock:focus {
   border: 0;
-  outline: none;
+  line-height: normal;
+  outline: 0;
 }
 
 .btn-spinblock:active {
   color: #81b3d2;
+  line-height: normal;
+  vertical-align: top;
+  border: 0;
+  outline: 0;
+}
+
+.btn-spinblock:active:hover {
+  line-height: normal;
+  border: 0;
+  outline: 0;
 }
 
 .btn-find {
@@ -627,7 +681,7 @@ figure {
 }
 
 .btn-find:hover {
-  background-color: #669ec0; 
+  background-color: #669ec0;
 }
 
 .btn-find:active {
@@ -643,7 +697,7 @@ figure {
   color: #ffffff;   
   font-size: 16px;
   line-height: 21px;
-  font-family: "MyriadProRegular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   background-color:transparent;
   border: 2px solid #ffffff;
@@ -654,7 +708,7 @@ figure {
 
   width: 46px;
   height: 46px;
-  margin: 0 3px;
+  margin-left: 3px;
 
   font-size: 0;
   color: #a9a9a9;
@@ -719,11 +773,13 @@ figure {
 
 
 .btn-product {
-  padding: 5px 15px;
-  color: #ffffff;  
+  padding: 5px 17px;
+  margin-left: 1px;
+  color: #ffffff;
   font-size: 14px;
   line-height: 21px;
-  font-family: "MyriadProBold", "Arial", sans-serif;  
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .btn-product-more {
@@ -766,10 +822,10 @@ figure {
   color: #ffffff;
 }
 
-.form-filter__block {  
-  display: inline-block;  
-  padding-top: 25px; 
-  padding-bottom: 10px; 
+.form-filter__block {
+  display: inline-block;
+  padding-top: 27px;
+  padding-bottom: 10px;
   vertical-align: top;
   min-height: 165px;
   color: #ffffff;
@@ -781,14 +837,14 @@ figure {
 
 .infrastructures {
   margin-left: 70px;
-  width: 255px;
+  width: 253px;
 }
 
-.type-housing { 
+.type-housing {
   width: 290px;
 }
 
-.type-cost {  
+.type-cost {
   margin-left: 180px;
   width: 330px;
   text-align: center;
@@ -796,7 +852,7 @@ figure {
 
 .filter-range {
   float: right;
-  margin-right: 65px;
+  margin-right: 70px;
   margin-top: 25px;
   width: 330px;
 
@@ -805,7 +861,7 @@ figure {
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 
   font-weight: 600;
   font-size: 16px;
@@ -814,14 +870,17 @@ figure {
 
 .price-controls {
   position: relative;
-  
-  height: 36px;
+
+  height: 33px;
+  margin-left: 10px;
   margin-bottom: 20px;
 
   font-size: 0;
 
   border: 2px solid #ffffff;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
 }
 
 .price-controls::after {
@@ -835,39 +894,54 @@ figure {
 
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+           -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
 
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
   width: 90px;
   padding-left: 65px;
 }
 
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 57px;
+}
+
 .price-controls input {
+  display: inline-block;
   width: 50px;
   margin: 0;
 
   color: inherit;
-  font: inherit;
+  font-size: 14px;
+  line-height: normal;
+  font-family: "PT Sans", "Arial", sans-serif; 
 
   background: none;
   border: none;
+  outline: 0;
+}
+
+.price-controls input:focus {
+  outline: 0;
 }
 
 .range-controls {
   position: relative;
-
+  margin-left: 10px;
   margin-bottom: 32px;
 }
 
@@ -893,8 +967,12 @@ figure {
 
   background: #ababab;
   border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+     -moz-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -907,13 +985,13 @@ figure {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 31px;
 
   font-size: 14px;
   line-height: 20px;
@@ -922,7 +1000,9 @@ figure {
 
   background: transparent;
   border: 2px solid #ffffff;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
   cursor: pointer;
 }
 
@@ -936,7 +1016,7 @@ figure {
 
   position: relative;
 
-  padding-left: 40px;
+  padding-left: 42px;
   margin-bottom: 20px;
 
   cursor: pointer;
@@ -949,7 +1029,7 @@ figure {
 .form-filter__checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 3px;
-  left: 0;
+  left: -3px;
 
   width: 30px;
   height: 30px;
@@ -961,7 +1041,7 @@ figure {
   content: "";
   position: absolute;
   top: 0px;
-  left: 1px;
+  left: 2px;
 
   width: 30px;
   height: 30px;
@@ -970,18 +1050,29 @@ figure {
   background: transparent url("../img/check.png") no-repeat center top;
 }
 
+.form-filter__checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  left: -3px; 
+  background: transparent url("../img/disabled-not-check.png") no-repeat center top;
+}
+
+.form-filter__checkbox input[type="checkbox"]:disabled:checked + .checkbox-indicator::before { 
+  left: 1px;
+  background: transparent url("../img/disabled-check.png") no-repeat center top;
+}
+
 .form-filter__label {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-size: 16px;
   line-height: 21px;
-  font-family: "MyriadProRegular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .form-filter__table-caption {
   margin-bottom: 10px;
 }
 
-.form-filter__table {  
+.form-filter__table {
   margin-left: 10px;
   margin-bottom: 50px;
   border: 2px solid #ffffff;
@@ -995,7 +1086,7 @@ figure {
   text-align: center;
   font-size: 14px;
   line-height: 21px;
-  font-family: "MyriadProRegular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .linner {
@@ -1008,7 +1099,7 @@ figure {
   display: inline-block;
   vertical-align: top; 
   margin: 0;
-  margin-left: 25px;
+  margin-left: 37px;
   padding: 0;
   list-style: none;
 }
@@ -1017,7 +1108,7 @@ figure {
   display: inline-block;
   vertical-align: top;  
   padding-bottom: 15px; 
-  margin-right: 35px;
+  margin-right: 29px;
   font-size: 12px;
   color: #c6c6c6;
 }
@@ -1025,7 +1116,7 @@ figure {
 .link-form {
   color: #d1d1d1;
   text-decoration: none; /* Убираем подчеркивание */
-  border-bottom: 1px dashed #81b3d2; 
+  border-bottom: 1px dotted #81b3d2; 
 }
 
 .link-form:hover {
@@ -1047,9 +1138,9 @@ figure {
   padding-top: 40px;
 }
 
-.btn-asc {  
+.btn-asc {
   position: absolute;
-  left: -105px;
+  left: -107px;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -1073,7 +1164,8 @@ figure {
 
 .btn-desc {
   position: absolute;
-  left: -85px;
+  left: -84px;
+  top: 38px;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -1099,7 +1191,12 @@ figure {
   float: left;
   padding-top: 30px;
   padding-bottom: 15px;
-  margin-left: 75px;
+  margin-left: 71px;
+}
+
+.catalog__finded b {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .catalog__finded-label {
@@ -1108,19 +1205,21 @@ figure {
   width: 160px;
   font-size: 21px;
   line-height: 26px;
-  font-family: "MyriadProBold", "Arial", sans-serif; 
+  font-family: "PT Sans", "Arial", sans-serif; 
+  font-weight: bold;
 }
 
 .catalog__finded-count {
   font-size: 21px;
   line-height: 26px;
-  font-family: "MyriadProBold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .product {
   padding-top: 25px;
-  padding-bottom: 20px;
-  padding-left: 75px;
+  padding-bottom: 23px;
+  padding-left: 72px;
   padding-right: 65px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -1147,17 +1246,22 @@ figure {
 .product__star {
   padding-left: 25px;
   background: transparent url('../img/star.png') no-repeat center top;
+}
 
+..product__star:last-child {
+  padding-left: 0;
+  padding-right: 2px;
 }
 
 .product__name {
-  display: block;  
-  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 3px;
   font-size: 21px;
   line-height: 26px;
-  font-family: "MyriadProBold", "Arial", sans-serif; 
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   color: #000000;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .product__name:hover {
@@ -1171,22 +1275,24 @@ figure {
 .product__type-housing {
   display: inline-block;
   vertical-align: top;
-  width: 115px;
+  width: 113px;
 }
 
 .product__btns {
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
-.product__balls {
+.product__score {
   margin-top: 40px;
-  margin-right: 10px;
-  padding: 5px 15px;
+  margin-right: 7px;
+  padding: 5px 10px;
+  width: 90px;
   background-color: #f2f2f2;
   color: #666666;
   font-size: 14px;
-  line-height: 21px;
-  font-family: "MyriadProRegular", "Arial", sans-serif;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;  
 }
 
 .footer {
@@ -1194,27 +1300,30 @@ figure {
     left: 50%;
     margin-left: -600px;
     width: 1200px;
-    font-family: "MyriadProBold", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
     color: #333333;
     background-color: #ffffff;
 }
 
 .footer-main {
-    margin-top: -130px;
+    margin-top: -120px;
 }
 
 .footer .container {
-  padding-top: 45px;
+  padding-top: 40px;
   padding-bottom: 40px;
   background-image: none;
   background-color: rgba(255, 255, 255, 0.90);
-  box-shadow: 0px 5px 20px 0 gray;
+  -webkit-box-shadow: 0px 5px 20px 0 gray;
+     -moz-box-shadow: 0px 5px 20px 0 gray;
+          box-shadow: 0px 5px 20px 0 gray;
 }
 
 .footer__visited {
   float: left;  
-  margin-left: 85px;
-  margin-right: 195px;
+  margin-left: 81px;
+  margin-right: 200px;
   margin-top: 5px;
   width: 240px;
   font-size: 21px;
@@ -1225,17 +1334,18 @@ figure {
 .footer__social {
   float: left;
   text-align: center;
+  margin-top: -2px;
 }
 
 .footer__copyright {
   float: right;  
-  margin-right: 50px;
+  margin-right: 60px;
   width: 240px;
 }
 
 .footer__label {
   font-size: 14px;
   line-height: 26px;
-  font-family: "MyriadProRegular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   vertical-align: middle;
 }
